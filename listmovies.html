@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Library</title>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/movie.js"></script>
+    <script src="src/view/listmovies.js"></script>
+    <script>'use strict';</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+
+    <script>
+      window.addEventListener("load", pl.view.listMovies.setupUserInterface);
+    </script>
+
+    <link rel="stylesheet" href="src/css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head >
+  <body style="background-image:url(src/background.jpg)">
+    <div class="frame"><img src="src/logo.png" id="logo"></img></div>
+    <div align="center" >
+      <table id="movies">
+      <thead><tr><th>Title</th><th>Rate</th><th>Review</th></tr></thead>
+      <tbody></tbody>
+      </table>
+    </div>
+  
+    <div class="clear" class="form-group"> <button type="button" onclick="Movie.clearData()">Clear database</button></div>
+
+    <button class="back" class="form-group"><a href="index.html">Back to main menu</a></button>
+  </body>
+</html>

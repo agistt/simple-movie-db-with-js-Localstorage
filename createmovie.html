@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Library</title>
+  <script>'use strict';</script>
+  <script src="src/ctrl/initialize.js"></script>
+  <script src="src/model/movie.js"></script>
+  <script src="src/view/createmovie.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="src/css/bootstrap.min.css">
+  <script>
+   window.addEventListener("load", pl.view.createMovie.setupUserInterface);
+  </script>
+
+  <link rel="stylesheet" href="src/css/css.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body style="background-image:url(src/background.jpg)">
+  <div class="frame"><img src="src/logo.png" id="logo"></img></div>
+  <form id="Movie">
+    <p style="min-width:10vw;"><label >Title: <input name="title" style="width:25vw;min-width:100px;" /></label></p>
+    <p><label>Rate: <input name="rate" type="number" style="width:50px;" max="10" min="0" step=".1"/></label></p>
+    <p> <label>Review: <textarea name="review" style="height:15vw;width:45vw;min-width: 100px;" /></textarea></label></p>
+    <div class="confirm"><button type="button" name="save" id="save">Save</button></div>
+    <div id="mypopup" class="popup">
+    <div class="popup-content">
+      <img src="src/check.png" style="width:25px;"</img>
+      <div>Successfully saved!!</div>
+    </div>
+    </div>
+  </form>
+  <button class="back"><a href="index.html">Back to main menu</a></button>
+
+  <script >
+     var popup = document.getElementById('mypopup');
+     var btn = document.getElementById('save');
+     save.onclick = function() {
+      popup.style.display = "block";
+      }
+     window.onclick = function(event) {
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    }
+  </script>
+ 
+</body>
+</html>

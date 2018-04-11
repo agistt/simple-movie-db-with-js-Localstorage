@@ -1,0 +1,219 @@
+
+#logo {
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.frame {  
+    height: 20vh; 
+    width: 95vw; 
+    position: relative;
+    min-height: 100px;
+}
+.clear{
+  text-align: center;
+}
+
+form {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    width: 40%;
+  }
+  
+  .input {
+    width: 70%;
+    float: left;
+    display: block;
+  }
+  .back {
+    bottom: 0%;
+    position: fixed;
+  }
+.menu {
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+      }
+.confirm {
+  text-align: center;
+      }
+th {
+  text-align: center;
+  color: #80ff80;
+    font-family: 'Fvriosa';
+    font-size:1.2em;
+  letter-spacing:3pt;
+  word-spacing:2pt;
+  line-height:3;
+ }
+td {
+  max-width: 20vw;
+  vertical-align: top;
+  font-family: 'Fvriosa';
+  width:150px;
+  word-wrap:break-word;
+  text-align: center;
+  color: white;
+}
+td:nth-child(3){
+  text-align: left;
+}
+button {
+  box-sizing: border-box;
+  width: 13%;
+  min-width: 100px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  border: 2px solid #fff;
+  font-family: 'Indie Flower';
+  font-weight:bold;
+  font-size:20px;
+
+}
+button:hover,button:active {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+input {
+  padding: 2px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+input.focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+body {
+    background-size:100% auto;
+ }
+
+.popup {
+    display: none; /* Hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; /
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+.popup-content {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    font-family: 'Indie Flower';
+    font-weight: bold;
+    background:#e9ffd9;
+    border:1px solid #a6ca8a;    
+    width: 100px;
+    height: 70px;
+    margin-bottom: 40vh;
+    margin-left: 50vw; 
+    border-radius: 10px;
+    border-style: groove;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+.top, .sec{text-align:center; margin-top:3px; margin-bottom:3px;}
+.inner{
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  border: 2px solid #fff; 
+  font-family: 'Indie Flower';
+  font-weight:bold;
+  font-size:25px;
+  text-align: center; 
+}
+.inner:hover,.inner:active {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+a {
+      text-decoration: none;
+        color: #fff;
+}
+a:hover{
+    color: #000;
+}
+@font-face {
+    font-family: Fvriosa;
+    src: url(Fvriosa.ttf);
+}
+label { 
+    color: #cc0000;
+    font-family: 'Fvriosa';
+    font-size:1.2em;
+    line-height:2;
+}
+input, textarea,select {
+  color: #000;
+  border:2px ;
+  border-radius:10px;
+  box-shadow:6px 5px 5px #607280;
+  font-family: 'Rockwell';
+
+}
+select {
+ padding: 5px 50px 10px 13px !important; border: 1px solid #e3e3e3; border-radius: 3px; 
+ background: url("https://image.ibb.co/iMeAJv/selectbox_arrow.png") right center no-repeat; background-color: #fff;
+  color: #444444; line-height: 16px !important; appearance: none;
+  -webkit-appearance: none; -moz-appearance: none;
+  cursor: pointer;
+}
+@media (max-width: 460px) {
+   .back{
+    height: 50px;
+    font-size:15px;
+    }
+    #save {font-size:15px; min-width: 60px;
+  }
+@media (max-width: 300px) {
+  .inner {
+    min-width: 90px;
+    font-size:15px;
+  }
